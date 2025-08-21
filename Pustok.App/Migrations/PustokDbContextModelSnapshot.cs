@@ -436,6 +436,110 @@ namespace Pustok.App.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Pustok.App.Models.BookTag", b =>
+                {
+                    b.Property<int>("TagId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
+                    b.HasKey("TagId", "BookId");
+
+                    b.HasIndex("BookId");
+
+                    b.ToTable("BookTags");
+
+                    b.HasData(
+                        new
+                        {
+                            TagId = 1,
+                            BookId = 1
+                        },
+                        new
+                        {
+                            TagId = 3,
+                            BookId = 1
+                        },
+                        new
+                        {
+                            TagId = 3,
+                            BookId = 2
+                        },
+                        new
+                        {
+                            TagId = 4,
+                            BookId = 2
+                        },
+                        new
+                        {
+                            TagId = 2,
+                            BookId = 3
+                        },
+                        new
+                        {
+                            TagId = 4,
+                            BookId = 3
+                        },
+                        new
+                        {
+                            TagId = 5,
+                            BookId = 4
+                        },
+                        new
+                        {
+                            TagId = 5,
+                            BookId = 5
+                        },
+                        new
+                        {
+                            TagId = 1,
+                            BookId = 6
+                        },
+                        new
+                        {
+                            TagId = 4,
+                            BookId = 7
+                        },
+                        new
+                        {
+                            TagId = 2,
+                            BookId = 8
+                        },
+                        new
+                        {
+                            TagId = 3,
+                            BookId = 9
+                        },
+                        new
+                        {
+                            TagId = 5,
+                            BookId = 10
+                        });
+                });
+
+            modelBuilder.Entity("Pustok.App.Models.Featured", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Icon")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Featured");
+                });
+
             modelBuilder.Entity("Pustok.App.Models.Genre", b =>
                 {
                     b.Property<int>("Id")
@@ -469,6 +573,19 @@ namespace Pustok.App.Migrations
                             Id = 3,
                             Name = "Mystery"
                         });
+                });
+
+            modelBuilder.Entity("Pustok.App.Models.Setting", b =>
+                {
+                    b.Property<string>("Key")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Key");
+
+                    b.ToTable("Settings");
                 });
 
             modelBuilder.Entity("Pustok.App.Models.Slider", b =>
@@ -546,6 +663,50 @@ namespace Pustok.App.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Pustok.App.Models.Tag", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tags");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Magic"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Classic"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Bestseller"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Adventure"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Mystery"
+                        });
+                });
+
             modelBuilder.Entity("Pustok.App.Models.Book", b =>
                 {
                     b.HasOne("Pustok.App.Models.Author", "Author")
@@ -576,6 +737,25 @@ namespace Pustok.App.Migrations
                     b.Navigation("Book");
                 });
 
+            modelBuilder.Entity("Pustok.App.Models.BookTag", b =>
+                {
+                    b.HasOne("Pustok.App.Models.Book", "Book")
+                        .WithMany("BookTags")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Pustok.App.Models.Tag", "Tag")
+                        .WithMany("BookTags")
+                        .HasForeignKey("TagId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
+
+                    b.Navigation("Tag");
+                });
+
             modelBuilder.Entity("Pustok.App.Models.Author", b =>
                 {
                     b.Navigation("Books");
@@ -584,11 +764,18 @@ namespace Pustok.App.Migrations
             modelBuilder.Entity("Pustok.App.Models.Book", b =>
                 {
                     b.Navigation("BookImages");
+
+                    b.Navigation("BookTags");
                 });
 
             modelBuilder.Entity("Pustok.App.Models.Genre", b =>
                 {
                     b.Navigation("Books");
+                });
+
+            modelBuilder.Entity("Pustok.App.Models.Tag", b =>
+                {
+                    b.Navigation("BookTags");
                 });
 #pragma warning restore 612, 618
         }

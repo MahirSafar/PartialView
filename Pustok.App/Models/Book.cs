@@ -29,5 +29,6 @@ namespace Pustok.App.Models
         [Required]
         public string HoverImageUrl { get; set; }
         public int StockCount { get; set; }
+        public List<BookTag> BookTags { get; set; }
     }
 }

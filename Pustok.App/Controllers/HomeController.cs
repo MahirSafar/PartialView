@@ -23,7 +23,8 @@ namespace Pustok.App.Controllers
                 DicountBooks = pustokDbContext.Books
                     .Include(b => b.Author)
                     .Where(b => b.DiscountPercentage > 0)
-                    .ToList()
+                    .ToList(),
+                Featured = pustokDbContext.Featured.ToList()
             };
             return View(homeVM);
         }

@@ -8,5 +8,6 @@ namespace Pustok.App.ViewModels
         public List<Book> FeaturedBooks { get; set; }
         public List<Book> NewBooks { get; set; }
         public List<Book> DicountBooks { get; set; }
+        public List<Featured> Featured { get; set; }
     }
 }

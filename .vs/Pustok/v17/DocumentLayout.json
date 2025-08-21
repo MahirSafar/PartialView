@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Mahir\\Desktop\\Pustok\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\Migrations\\20250821165944_AddSettingTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Pustok.App\\Migrations\\20250821165944_AddSettingTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E757D6-9426-4842-99A3-2F986DEAB687}|Pustok.App\\Pustok.App.csproj|c:\\users\\mahir\\desktop\\pustok\\pustok.app\\dal\\context\\pustokdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E757D6-9426-4842-99A3-2F986DEAB687}|Pustok.App\\Pustok.App.csproj|solutionrelative:pustok.app\\dal\\context\\pustokdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E757D6-9426-4842-99A3-2F986DEAB687}|Pustok.App\\Pustok.App.csproj|c:\\users\\mahir\\desktop\\pustok\\pustok.app\\models\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E757D6-9426-4842-99A3-2F986DEAB687}|Pustok.App\\Pustok.App.csproj|solutionrelative:pustok.app\\models\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250821165944_AddSettingTable.cs",
+              "DocumentMoniker": "C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\Migrations\\20250821165944_AddSettingTable.cs",
+              "RelativeDocumentMoniker": "Pustok.App\\Migrations\\20250821165944_AddSettingTable.cs",
+              "ToolTip": "C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\Migrations\\20250821165944_AddSettingTable.cs",
+              "RelativeToolTip": "Pustok.App\\Migrations\\20250821165944_AddSettingTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T16:59:44.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PustokDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\DAL\\Context\\PustokDbContext.cs",
+              "RelativeDocumentMoniker": "Pustok.App\\DAL\\Context\\PustokDbContext.cs",
+              "ToolTip": "C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\DAL\\Context\\PustokDbContext.cs",
+              "RelativeToolTip": "Pustok.App\\DAL\\Context\\PustokDbContext.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAmwGkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T16:59:08.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Setting.cs",
+              "DocumentMoniker": "C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\Models\\Setting.cs",
+              "RelativeDocumentMoniker": "Pustok.App\\Models\\Setting.cs",
+              "ToolTip": "C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\Models\\Setting.cs",
+              "RelativeToolTip": "Pustok.App\\Models\\Setting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T16:58:27.925Z",
+              "EditorCaption": ""
             }
           ]
         }

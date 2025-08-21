@@ -7,6 +7,7 @@ namespace Pustok.App.DAL.Context
     {
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(PustokDbContext).Assembly);
             base.OnModelCreating(modelBuilder);
 
             // Seed Authors (5)
@@ -67,11 +68,41 @@ namespace Pustok.App.DAL.Context
                 new Slider { Id = 2, Title = "New Arrivals", Description = "Check out the latest books!", ImageUrl = "product-2.jpg", ButtonText = "View New", ButtonLink = "/books/new", Order = 2, CreatedAt = new DateTime(2024, 1, 2) },
                 new Slider { Id = 3, Title = "Best Sellers", Description = "Our most popular books!", ImageUrl = "product-3.jpg", ButtonText = "See Bestsellers", ButtonLink = "/books/bestsellers", Order = 3, CreatedAt = new DateTime(2024, 1, 3) }
             );
+
+            // Seed Tags
+            modelBuilder.Entity<Tag>().HasData(
+                new Tag { Id = 1, Name = "Magic" },
+                new Tag { Id = 2, Name = "Classic" },
+                new Tag { Id = 3, Name = "Bestseller" },
+                new Tag { Id = 4, Name = "Adventure" },
+                new Tag { Id = 5, Name = "Mystery" }
+            );
+
+            // Seed BookTags
+            modelBuilder.Entity<BookTag>().HasData(
+                new BookTag { BookId = 1, TagId = 1 },
+                new BookTag { BookId = 1, TagId = 3 },
+                new BookTag { BookId = 2, TagId = 3 },
+                new BookTag { BookId = 2, TagId = 4 },
+                new BookTag { BookId = 3, TagId = 2 },
+                new BookTag { BookId = 3, TagId = 4 },
+                new BookTag { BookId = 4, TagId = 5 },
+                new BookTag { BookId = 5, TagId = 5 },
+                new BookTag { BookId = 6, TagId = 1 },
+                new BookTag { BookId = 7, TagId = 4 },
+                new BookTag { BookId = 8, TagId = 2 },
+                new BookTag { BookId = 9, TagId = 3 },
+                new BookTag { BookId = 10, TagId = 5 }
+            );
         }
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<BookImage> BookImages { get; set; }
         public DbSet<Author> Authors { get; set; }
         public DbSet<Genre> Genres { get; set; }
+        public DbSet<Featured> Featured { get; set; }
+        public DbSet<Tag> Tags { get; set; }
+        public DbSet<BookTag> BookTags { get; set; }
+        public DbSet<Setting> Settings { get; set; }
     }
 }
