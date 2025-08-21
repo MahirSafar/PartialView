@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mahir\\Desktop\\Pustok\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{51E757D6-9426-4842-99A3-2F986DEAB687}|Pustok.App\\Pustok.App.csproj|c:\\users\\mahir\\desktop\\pustok\\pustok.app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E757D6-9426-4842-99A3-2F986DEAB687}|Pustok.App\\Pustok.App.csproj|solutionrelative:pustok.app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E757D6-9426-4842-99A3-2F986DEAB687}|Pustok.App\\Pustok.App.csproj|c:\\users\\mahir\\desktop\\pustok\\pustok.app\\views\\shared\\_bookspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E757D6-9426-4842-99A3-2F986DEAB687}|Pustok.App\\Pustok.App.csproj|solutionrelative:pustok.app\\views\\shared\\_bookspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E757D6-9426-4842-99A3-2F986DEAB687}|Pustok.App\\Pustok.App.csproj|c:\\users\\mahir\\desktop\\pustok\\pustok.app\\views\\book\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51E757D6-9426-4842-99A3-2F986DEAB687}|Pustok.App\\Pustok.App.csproj|solutionrelative:pustok.app\\views\\book\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E757D6-9426-4842-99A3-2F986DEAB687}|Pustok.App\\Pustok.App.csproj|c:\\users\\mahir\\desktop\\pustok\\pustok.app\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E757D6-9426-4842-99A3-2F986DEAB687}|Pustok.App\\Pustok.App.csproj|solutionrelative:pustok.app\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51E757D6-9426-4842-99A3-2F986DEAB687}|Pustok.App\\Pustok.App.csproj|c:\\users\\mahir\\desktop\\pustok\\pustok.app\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51E757D6-9426-4842-99A3-2F986DEAB687}|Pustok.App\\Pustok.App.csproj|solutionrelative:pustok.app\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_BooksPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\Views\\Shared\\_BooksPartial.cshtml",
+              "RelativeDocumentMoniker": "Pustok.App\\Views\\Shared\\_BooksPartial.cshtml",
+              "ToolTip": "C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\Views\\Shared\\_BooksPartial.cshtml*",
+              "RelativeToolTip": "Pustok.App\\Views\\Shared\\_BooksPartial.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-21T13:31:18.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pustok.App\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\Views\\Home\\Index.cshtml*",
+              "RelativeToolTip": "Pustok.App\\Views\\Home\\Index.cshtml*",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAlwMMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-21T13:26:24.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Pustok.App\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Pustok.App\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T13:26:22.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\Views\\Book\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Pustok.App\\Views\\Book\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\Views\\Book\\Detail.cshtml",
+              "RelativeToolTip": "Pustok.App\\Views\\Book\\Detail.cshtml",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAAAFoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-21T13:25:37.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "Pustok.App\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\Mahir\\Desktop\\Pustok\\Pustok.App\\Controllers\\BookController.cs",
+              "RelativeToolTip": "Pustok.App\\Controllers\\BookController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T13:25:34.616Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
